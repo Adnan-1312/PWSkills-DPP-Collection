@@ -1,0 +1,38 @@
+body {
+font-family: Arial, sans-serif;
+display: flex;
+flex-direction: column;
+align-items: center;
+background-color: #f0f0f0;
+background-image: url('./abstract-colorful-pixel-background.jpg'); /* Add your image URL here */
+background-size: cover;
+background-position: center;
+background-attachment: fixed;
+}
+#grid-container {
+margin: 20px;
+border: 1px solid #000;
+display: grid;
+background-color: rgb(255, 255, 255);
+}
+.pixel {
+width: 20px;
+height: 20px;
+border: 1px solid #ddd;
+box-sizing: border-box;
+}
+#controls {
+margin-bottom: 20px;
+display: flex;
+gap: 10px;
+}
+#color-picker {
+margin-right: 10px;
+}
+button {
+border: none;
+background-color: rgb(140, 0, 255);
+color: white;
+padding: 5px;
+border-radius: 5px;
+}

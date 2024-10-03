@@ -1,0 +1,58 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f0f0f0;
+    
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-image: url('./shopping-cart-full-products-inside-supermarket.jpg'); /* Add your image URL here */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+header {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #56ff3c;
+}
+
+.control-panel {
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+#product-list {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+    max-width: 600px;
+}
+
+.product-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #616060b1;
+}
+
+.in-stock {
+    background-color: #b8ffc895;
+    border-color: #00ff3c;
+}
+
+.out-of-stock {
+    background-color: #ffbec4ad;
+    border-color: #ff0019;
+}

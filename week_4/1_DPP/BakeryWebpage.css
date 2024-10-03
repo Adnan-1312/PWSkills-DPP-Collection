@@ -1,0 +1,88 @@
+/* General Styles */  
+body {  
+    font-family: 'Arial', sans-serif; /* Use a web-safe font */  
+    line-height: 1.6;  
+    margin: 0;  
+    padding: 0;  
+    background-color: #f9f9f9; /* Light background */  
+    color: #333; /* Dark text for readability */  
+}  
+
+header {
+    background-image: url("bg.jpg") ;  
+    background-color: #6a4f4b; /* Bakery theme color */  
+    color: #0800ff; /* White text color */  
+    padding: 20px;  
+    font-family: 'Lucida handwriting';
+    text-align: center;  
+}  
+
+nav ul {  
+    list-style-type: none;  
+    padding: 0;  
+}  
+
+nav ul li {  
+    display: inline;  
+    margin: 0 15px;  
+}  
+
+nav a {  
+    color: rgb(255, 0, 0);  
+    text-decoration: none;  
+}  
+
+main {  
+    padding: 20px;  
+}  
+
+.bakery-item {  
+    float: left;  
+    width: 30%; /* Adjust width for layout */  
+    margin: 0 1.5%;  
+    text-align: center;  
+}  
+
+.bakery-item img {  
+    width: 100%; /* Responsive image */  
+    height: auto;  
+}  
+
+.special-offer {  
+    position: fixed;  
+    top: 10px;  
+    right: 10px;  
+    background-color: #ffcc00; /* Highlight color */  
+    padding: 10px;  
+    z-index: 1000; /* Ensure it's above other elements */  
+}  
+
+footer {  
+    clear: both; /* Make sure it starts below floated elements */  
+    background-color: #6a4f4b; /* Same as header */  
+    color: white;  
+    text-align: center;  
+    padding: 10px;  
+}  
+
+.social-media a {  
+    margin: 0 10px;  
+    color: white;  
+    text-decoration: none;  
+}  
+
+/* Overflow Management Example */  
+.bakery-item {  
+    overflow: hidden; /* Prevent content overflow inside the item */  
+}  
+
+/* Add style for responsiveness */  
+@media (max-width: 768px) {  
+    .bakery-item {  
+        width: 100%; /* Stack items vertically on small screens */  
+        margin: 0 0 20px 0;  
+    }  
+}
+h2{
+    text-align: center;
+}

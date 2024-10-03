@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>My Notes App Using Fetch API</title>
+</head>
+<body>
+    <div id="app">
+        
+        <header>
+            <h1>My Notes</h1>
+        </header>
+
+        <main>
+
+            <div id="note-form">
+                <input type="text" id="note-title" placeholder="Type in a title for your note..."/>
+                <textarea id="note-content" placeholder="Type in your note here..."></textarea>
+                <button id="save-note">
+                <i class="fas fa-save"></i> Save Note
+                </button>
+            </div>
+
+            <div id="notes-list"></div>
+        </main>
+    </div>
+
+    <script type="module" src="js/app.js"></script>
+</body>
+</html>

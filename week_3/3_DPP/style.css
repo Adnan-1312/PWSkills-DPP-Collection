@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#blog {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px;
+    border-radius: 5px;
+    background-color: rgba(0,0,0,0.05); /* Assuming you want a background color */
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.header span {
+    color: blue;
+}
+
+.header h3 {
+    font-size: 2.4rem; /* Changed from cm to rem for better responsiveness */
+    color: #2b2b2b;
+    font-weight: 600;
+}
+
+.container { /* Corrected spelling here */
+    display: flex; /* Corrected flexbox syntax */
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px 0;
+    column-gap: 50px;
+}
+
+.items {
+    width: 350px;
+    background-color: #ffffff;
+    border: 1px solid #ececec; /* Corrected border syntax */
+}
+
+.item-img {
+    width: 100%;
+    height: auto;
+}
+
+.item-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.item-text {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.item-text span {
+    color: #f33cf3;
+    font-size: 0.9rem;
+}
+
+.item-text .text-1 {
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #272727;
+}
+
+.item-text .text-1:hover {
+    color: #f33c3c;
+    transition: color 0.3s ease;
+}
+
+.item-text p {
+    color: #9b9b9b;
+    font-size: 0.9rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 20px 0;
+}
+
+.item-text a {
+    color: #0f0f0f;
+}
+
+@media (max-width: 1250px) {
+    .items {
+        width: 300px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .items {
+        width: 70%;
+    }
+}

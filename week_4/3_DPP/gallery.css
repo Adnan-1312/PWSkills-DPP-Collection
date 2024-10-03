@@ -1,0 +1,67 @@
+body {  
+    font-family: Arial, sans-serif;  
+    margin: 0;  
+    padding: 0;  
+}  
+
+header {
+    color: rgb(255, 0, 0);  
+    text-align: center;  
+    padding: 1rem;  
+}  
+
+.gallery {  
+    padding: 20px;  
+}  
+
+.grid-container {  
+    display: grid;  
+    grid-template-columns: 1fr; /* default to single column */  
+    grid-gap: 20px;  
+}  
+
+figure {  
+    margin: 0;  
+    transition: transform 0.3s ease;  
+}  
+
+figure img {  
+    width: 100%; /* responsive */  
+    height: auto;  
+    display: block;  
+}  
+
+figcaption {  
+    text-align: center;  
+    margin-top: 8px;  
+    color: #555;  
+}  
+footer{
+    text-align: center;
+}
+/* Mobile View */  
+@media (max-width: 600px) {  
+    .grid-container {  
+        grid-template-columns: 1fr;  
+    }  
+}  
+
+/* Tablet View */  
+@media (min-width: 601px) and (max-width: 1024px) {  
+    .grid-container {  
+        grid-template-columns: 1fr 1fr;  
+    }  
+}  
+
+/* Desktop View */  
+@media (min-width: 1025px) {  
+    .grid-container {  
+        grid-template-columns: repeat(3, 1fr);  
+    }  
+}  
+
+/* Hover Effects */  
+figure:hover {  
+    transform: scale(1.05);  
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);  
+}

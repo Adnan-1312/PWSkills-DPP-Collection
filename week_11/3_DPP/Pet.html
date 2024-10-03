@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Pet Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script type="module" src="./main.js" defer></script>
+    <header>Interactive Pet Management</header>
+    <div class="container">
+        <form id="add-pet-form">
+            <input type="text" id="pet-name" placeholder="Pet Name" required>
+            <select id="pet-type" required>
+                <option value="">Select Type</option>
+                <option value="dog">Dog</option>
+                <option value="cat">Cat</option>
+                <option value="generic">Generic</option>
+            </select>
+            <button type="submit">Add Pet</button>
+        </form>
+        <div id="pet-container"></div>
+    </div>
+</body>
+</html>
